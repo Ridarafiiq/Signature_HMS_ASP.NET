@@ -1,0 +1,133 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="Signature_Hotel_Management_System.Content.WebForms.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <link href="Master_CSS.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="Row">
+        <div class="container">
+        <div class="row main_row">
+            <div class="col-md-12">
+
+                <section class="panel">
+                    
+                    <div class="lofo">
+
+                    </div>
+
+                    <!-- The sidebar -->
+                    
+                    <div class="navbar">
+                      <asp:Image ID="Image1" runat="server" ImageUrl="/Content//Images/logo.png" Width="128px" Height="100px" CssClass="auto-style1"/>
+                      <a href="~/Content/WebForms/3.Dashboard/Dashboard.aspx">Home</a>
+                      <a href="~/Content/WebForms/4.My Profile/My_profile.aspx">My Profile</a>
+                        <a href="~/Content/WebForms/5.Catalog/Catalog.aspx"> Catalog </a>
+
+                      <div class="dropdown">
+                        <button class="dropbtn">Reservations
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>
+
+                                              <div class="dropdown">
+                        <button class="dropbtn">Staff
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>
+
+                                              <div class="dropdown">
+                        <button class="dropbtn">Dropdown
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    
+                    <!-- The sidebar -->
+         
+
+                </section>
+
+
+                <section class="cont">
+
+                    <div class="hdr_panel">
+                        <section class="left">
+                           <p>
+                                1 of 3
+                            </p>
+                        </section>
+
+                        <section class="center">
+                            <p>
+                                2 of 3
+                            </p>
+                        </section>
+
+                        <section class="right">
+                            <p>
+                                <asp:Button ID="Button1" runat="server" BorderStyle="None" OnClick="Button1_Click" Text="Button" />
+                            </p>
+
+                        </section>
+                        
+                        
+                        
+
+                    </div>
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                    <%--Here--%>
+
+                    <div class="container-fluid">
+
+                    </div>
+
+                    <%--Here--%>         
+      </section>
+
+            </div>
+
+            </div>
+
+        <div class="row ftr_row">
+            <div class="col-md-12">
+                <footer>
+                    <p>
+                        Copyright 2022 by Signature Group. All Rights Reserved.
+                    </p>
+                </footer>
+
+            </div>
+            </div>
+
+    </div>
+        </div>
+    </form>
+
+    </body>
+</html>

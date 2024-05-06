@@ -1,0 +1,167 @@
+﻿body{
+    
+}
+
+.cont {
+
+}
+
+.cont .lbl1 {
+    margin-top: 20px;
+}
+
+.T1 {
+    width: 30%;
+    padding: 15px 20px;
+    margin: 0px 5PX;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: -0px;
+    text-align: left;
+}
+
+
+.T2 {
+    width: 20%;
+    padding: 15px 20px;
+    margin: 0px 5PX;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: -0px;
+    text-align: left;
+}
+.button {
+    background-color: #FFD400; /* yellow */
+    border: none;
+    color: white;
+    padding: 10px 120px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px 0px 120px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button1 {
+    background-color: #FFD400;
+    color: black;
+    border: 2px solid #FFD400;
+    border-radius: 12px;
+}
+
+    .button1:hover {
+        background-color: #6078ff;
+        color: white;
+        text-decoration: underline;
+    }
+
+.view {
+    background-color: #FFD400; /* yellow */
+    border: none;
+    color: white;
+    padding: 10px 80px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 3px 1px 0px 170px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.view1 {
+    background-color: #FFD400;
+    color: black;
+    border: 2px solid #FFD400;
+    border-radius: 40px;
+}
+
+    .view1:hover {
+        background-color: #FFD400;
+        color: white;
+        text-decoration: underline;
+    }
+
+
+
+    /*customer page*/
+.button2 {
+    background-color: #FFD400; /* yellow */
+    border: none;
+    color: black;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius:40px;
+    margin: 3px 1px 0px 7px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.button4 {
+    background-color: #FFD400;
+    color: black;
+    border: 2px solid #FFD400;
+    border-radius: 40px;
+}
+
+    .button4:hover {
+        background-color: #FFD400;
+        color: white;
+        font-weight:bold;
+    }
+.space{
+    margin-left:1000px;
+    margin-top:-100px;
+}
+.button3 {
+    background-color: #FFD400; /* yellow */
+    border: none;
+    color: black;
+    padding: 8px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 40px;
+    margin: 3px 1px 0px 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button5 {
+    background-color: #FFD400;
+    color: black;
+    border: 2px solid #FFD400;
+    border-radius: 40px;
+}
+
+    .button5:hover {
+        background-color: #FFD400;
+        color: white;
+    }
+
+.auto-style1 {
+    font-family: century;
+    font-size: medium;
+}
+
+.auto-style2 {
+    font-family: "Century Gothic";
+    font-size: medium;
+    
+}
+
+.auto-style3 {
+    font-family: "Century Gothic";
+}
+
+.auto-style4 {
+    font-family: "Century Gothic";
+    font-weight: bold;
+    font-size: large;
+    color: #000000;
+}

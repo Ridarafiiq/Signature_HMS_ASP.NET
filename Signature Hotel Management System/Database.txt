@@ -1,0 +1,49 @@
+////////////////////////////////////////////////////////// DATABASE Physical Path //////////////////////////////////////////////////////// 
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+<connectionStrings>
+
+    <add name="appregdb"
+    connectionString="Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=| DataDirectory|\App_Reg.mdf; Integrated Security=True"
+providerName="System.Data. SqlClient"   />
+
+
+    <add name="signaturedb"
+    connectionString="Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=| DataDirectory|\Signature.mdf; Integrated Security=True"
+providerName="System.Data. SqlClient"   />
+
+
+    <add name="staffdatadb"
+    connectionString="Data Source=(LocalDB)\MSSQLLocalDB; AttachDbFilename=| DataDirectory|\staffdata.mdf; Integrated Security=True"
+providerName="System.Data. SqlClient"   />
+
+</connectionStrings> 
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+In Form.CS file
+ public partial class WebForm1 : System.Web.UI.Page
+    {
+        SqlConnection conn;
+
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            
+            AppDomain.CurrentDomain.SetData("DataDirectory", Server.MapPath("~/App_Data"));
+            conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["appregdb"].ConnectionString);
+
+            AppDomain.CurrentDomain.SetData("DataDirectory", Server.MapPath("~/App_Data"));
+            conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["signaturedb"].ConnectionString);
+
+            AppDomain.CurrentDomain.SetData("DataDirectory", Server.MapPath("~/App_Data"));
+            conn = new SqlConnection(System.Configuration.ConfigurationManager.ConnectionStrings["staffdatadb"].ConnectionString);
+
+        }
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

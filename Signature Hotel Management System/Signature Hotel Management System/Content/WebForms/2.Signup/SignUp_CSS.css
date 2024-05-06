@@ -1,0 +1,124 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.row_pan {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 2.5%;
+}
+
+.center_pan {
+    background-color: white;
+    width: 1000px;
+    height: 670px;
+    border-radius: 10px;
+}
+
+.SectionL {
+    width: 45%;
+    height: 100%;
+    background: linear-gradient(65deg, #F5A6ED, #0892FC);
+    float: left;
+}
+
+.SectionR {
+    width: 55%;
+    height: 100%;
+    background-color: white;
+    float: right;
+}
+
+    .SectionR p {
+        text-align: center;
+        font-size: 30px;
+    }
+
+.logsection {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+
+    .logsection #TextBox1 {
+        text-align: center;
+    }
+
+    .logsection #TextBox2 {
+        text-align: center;
+    }
+
+    .logsection #TextBox3 {
+        text-align: center;
+    }
+
+    .logsection #TextBox4 {
+        text-align: center;
+    }
+
+    .logsection #TextBox5 {
+        text-align: center;
+    }
+
+    .logsection #TextBox6 {
+        text-align: center;
+    }
+
+    .logsection #RequiredFieldValidator1 {
+        text-align: center;
+    }
+
+    .logsection #RequiredFieldValidator2 {
+        text-align: center;
+    }
+
+    .logsection #RequiredFieldValidator3 {
+        text-align: center;
+    }
+
+    .logsection #RequiredFieldValidator4 {
+        text-align: center;
+    }
+
+    .logsection #RequiredFieldValidator5 {
+        text-align: center;
+    }
+
+    .logsection #RequiredFieldValidator6 {
+        text-align: center;
+    }
+
+    .Chk{
+        display: unset;
+        align-items: unset;
+        justify-items: unset;
+    }
+
+
+    #label1 {
+        text-align:left;
+    }
+
+    .Btuon{
+        align-items: center;
+        justify-items: center;
+    }
+
+
+    #Button1 {
+    color: white;
+    background: linear-gradient(65deg, #0892FC, #F5A6ED);
+    border-radius: 5px;
+}
+
+    #Button2 {
+        color: white;
+        background: linear-gradient(65deg, #F5A6ED, #0892FC);
+        border-radius: 5px;
+    }

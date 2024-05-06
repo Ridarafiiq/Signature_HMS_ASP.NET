@@ -1,0 +1,303 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5872479-1E6A-40D8-B678-F7747C9033E7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Signature_Hotel_Management_System</RootNamespace>
+    <AssemblyName>Signature Hotel Management System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44376</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\App_Reg.mdf" />
+    <Content Include="App_Data\App_Reg_log.ldf">
+      <DependentUpon>App_Reg.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Database1.mdf" />
+    <Content Include="App_Data\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\profile.mdf" />
+    <Content Include="App_Data\profile_log.ldf">
+      <DependentUpon>profile.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\Signature.mdf" />
+    <Content Include="App_Data\Signature_log.ldf">
+      <DependentUpon>Signature.mdf</DependentUpon>
+    </Content>
+    <Content Include="App_Data\staffdata.mdf" />
+    <Content Include="App_Data\staffdata_log.ldf">
+      <DependentUpon>staffdata.mdf</DependentUpon>
+    </Content>
+    <Content Include="Content\Bootstrap\Content\bootstrap-grid.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-grid.min.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-grid.rtl.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-grid.rtl.min.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-reboot.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-reboot.min.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-reboot.rtl.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-reboot.rtl.min.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-utilities.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-utilities.min.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-utilities.rtl.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-utilities.rtl.min.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap.min.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap.rtl.css" />
+    <Content Include="Content\Bootstrap\Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.bundle.js" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.esm.js" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.esm.min.js" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.js" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.min.js" />
+    <Content Include="Content\Images\logo.png" />
+    <Content Include="Content\Images\profile.jpg" />
+    <Content Include="Content\WebForms\0.MasterPage\Master_CSS.css" />
+    <Content Include="Content\WebForms\0.MasterPage\nav.js" />
+    <Content Include="Content\WebForms\4.My Profile\MyProfile.aspx" />
+    <Content Include="Content\WebForms\1.Login\Log_Css.css" />
+    <Content Include="Content\WebForms\1.Login\Login.aspx" />
+    <Content Include="Content\WebForms\2.Signup\Sign_up.aspx" />
+    <Content Include="Content\WebForms\2.Signup\SignUp_CSS.css" />
+    <Content Include="Content\WebForms\3.Dashboard\Dashboard.aspx" />
+    <Content Include="Content\WebForms\4.My Profile\My_profile.aspx" />
+    <Content Include="Content\WebForms\5.Catalog\Catalog.aspx" />
+    <Content Include="Content\WebForms\5.Catalog\Catalog_CSS.css" />
+    <Content Include="Content\WebForms\6.Staff\A. Manage Staff\Manage Staff.aspx" />
+    <Content Include="Content\WebForms\6.Staff\B. View Staff\View Staff.aspx" />
+    <Content Include="Content\WebForms\7. Reservations\A. AddBooking\AddBooking.aspx" />
+    <Content Include="Content\WebForms\7. Reservations\A. AddBooking\Add_Booking.aspx" />
+    <Content Include="Content\WebForms\7. Reservations\A. AddBooking\Bookings.css" />
+    <Content Include="Content\WebForms\7. Reservations\B. UpdateBooking\Bookings.css" />
+    <Content Include="Content\WebForms\7. Reservations\B. UpdateBooking\UpdateBooking.aspx" />
+    <Content Include="Content\WebForms\7. Reservations\C.ViewBooking\Bookings.css" />
+    <Content Include="Content\WebForms\7. Reservations\C.ViewBooking\ViewBooking.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Content\WebForms\0.MasterPage\MasterPage.Master.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\0.MasterPage\MasterPage.Master.designer.cs">
+      <DependentUpon>MasterPage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\4.My Profile\MyProfile.aspx.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\4.My Profile\MyProfile.aspx.designer.cs">
+      <DependentUpon>MyProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\1.Login\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\1.Login\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\2.Signup\Sign_up.aspx.cs">
+      <DependentUpon>Sign_up.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\2.Signup\Sign_up.aspx.designer.cs">
+      <DependentUpon>Sign_up.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\3.Dashboard\Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\3.Dashboard\Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\4.My Profile\My_profile.aspx.cs">
+      <DependentUpon>My_profile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\4.My Profile\My_profile.aspx.designer.cs">
+      <DependentUpon>My_profile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\5.Catalog\Catalog.aspx.cs">
+      <DependentUpon>Catalog.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\5.Catalog\Catalog.aspx.designer.cs">
+      <DependentUpon>Catalog.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\6.Staff\A. Manage Staff\Manage Staff.aspx.cs">
+      <DependentUpon>Manage Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\6.Staff\A. Manage Staff\Manage Staff.aspx.designer.cs">
+      <DependentUpon>Manage Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\6.Staff\B. View Staff\View Staff.aspx.cs">
+      <DependentUpon>View Staff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\6.Staff\B. View Staff\View Staff.aspx.designer.cs">
+      <DependentUpon>View Staff.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\7. Reservations\A. AddBooking\AddBooking.aspx.cs">
+      <DependentUpon>AddBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\7. Reservations\A. AddBooking\AddBooking.aspx.designer.cs">
+      <DependentUpon>AddBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\7. Reservations\A. AddBooking\Add_Booking.aspx.cs">
+      <DependentUpon>Add_Booking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\7. Reservations\A. AddBooking\Add_Booking.aspx.designer.cs">
+      <DependentUpon>Add_Booking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\7. Reservations\B. UpdateBooking\UpdateBooking.aspx.cs">
+      <DependentUpon>UpdateBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\7. Reservations\B. UpdateBooking\UpdateBooking.aspx.designer.cs">
+      <DependentUpon>UpdateBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Content\WebForms\7. Reservations\C.ViewBooking\ViewBooking.aspx.cs">
+      <DependentUpon>ViewBooking.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Content\WebForms\7. Reservations\C.ViewBooking\ViewBooking.aspx.designer.cs">
+      <DependentUpon>ViewBooking.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\Bootstrap\Content\bootstrap.rtl.min.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap.rtl.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap.min.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-utilities.rtl.min.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-utilities.rtl.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-utilities.min.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-utilities.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-reboot.rtl.min.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-reboot.rtl.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-reboot.min.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-reboot.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-grid.rtl.min.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-grid.rtl.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-grid.min.css.map" />
+    <Content Include="Content\Bootstrap\Content\bootstrap-grid.css.map" />
+    <Content Include="Content\WebForms\0.MasterPage\MasterPage.Master" />
+    <None Include="packages.config" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.min.js.map" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.js.map" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.esm.min.js.map" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.esm.js.map" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.bundle.min.js.map" />
+    <Content Include="Content\Bootstrap\Scripts\bootstrap.bundle.js.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\WebForms\6.Staff\C. Test\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58233</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44376/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
